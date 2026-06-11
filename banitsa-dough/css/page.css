@@ -1,0 +1,16 @@
+/* ##### Current page [Start] ##### */
+.cell.-line.-text.-above {
+  padding-bottom: 0;
+}
+
+.cell.-line.-text.-explain {
+  border: none;
+  padding-top: 0;
+  color: rgb(192, 0, 0);
+  font-size: 90%;
+  font-style: italic;
+  font-weight: normal;
+  /* margin-bottom: 4px; */
+}
+
+/* ##### Current page [End] ##### */
