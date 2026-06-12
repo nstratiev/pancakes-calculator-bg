@@ -1,5 +1,5 @@
 // ##### Storage [Start] #####
-const calculatorName = 'calcBanica';
+const calculatorName = 'calcPancakes';
 
 export function setLocalStorage(dataObj, formName) {
   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));
@@ -15,6 +15,13 @@ export function setLocalStorage(dataObj, formName) {
 export function getLocalStorage(formName) {
   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));
 
+  console.log(calculatorsCategory);
+  console.log(calculatorName);
+  console.log(calculatorData);
+
+  console.log(calculatorData[calculatorName]);
+
+
   return calculatorData[calculatorName][formName];
 }
 
@@ -23,6 +30,7 @@ export function clearLocalStorageGlobal() {
 }
 
 export function populateLocaleStorageData(formsArr) {
+
   for (const formElem of formsArr) {
     const localStorageObj = getLocalStorage(formElem.name);
 

@@ -7,4 +7,4 @@ console.log(appVersion);
 
 
 // IMPORTS
-import { appVersion, printCurrentAppVersion } from '../global/js/version.js';
+import { appVersion, printCurrentAppVersion } from '../../global/js/version.js';

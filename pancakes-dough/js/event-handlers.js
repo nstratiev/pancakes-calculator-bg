@@ -72,6 +72,8 @@ function populatePredefinedValues(formElem, predefinedData, resetFormResultsFunc
   resetFormResultsFunc();
 
   for (const key in predefinedData) {
+    console.log(formElem.elements[key]);
+
     formElem.elements[key].value = predefinedData[key];
   }
 

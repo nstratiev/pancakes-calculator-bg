@@ -1,4 +1,5 @@
-export const calculatorsCategory = 'banicaCalculators';
+// export const calculatorsCategory = 'banicaCalculators';
+export const calculatorsCategory = 'pancakesCalculators';
 
 setInitialLocalStorage();
 

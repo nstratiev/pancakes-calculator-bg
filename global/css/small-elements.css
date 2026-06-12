@@ -94,4 +94,10 @@
   z-index: 99;
 }
 
+span.inform {
+  display: block;
+  font-style: italic;
+  font-size: 90%;
+}
+
 /* ##### Small Elements [End] ##### */

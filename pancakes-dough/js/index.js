@@ -6,7 +6,13 @@ document.addEventListener('DOMContentLoaded', (ev) => {
   printCurrentAppVersion(versionLegendElem);
   console.log(versionLegendElem);
 
+  // populateLocaleStorageData([formMain]);
+  console.log([formMain]);
+
   populateLocaleStorageData([formMain]);
+
+  console.log('HERE');
+
   onSubmit_initialLoad(ev);
 
 

@@ -19,8 +19,6 @@ export const btnToTopContainer = btnToTop.parentElement;
 export const btnGlobalReset = document.querySelector('#btn-reset-global ');
 export const btnGlobalSave = document.querySelector('#btn-save-global');
 
-export const desiredProteinsAmountElem = document.querySelector('#desired-proteins-amount');
-
 // -- Functions
 function getFormOutputsArray(formElem) {
   return Array.from(formElem.elements).filter(el => el.tagName === 'OUTPUT');
@@ -38,10 +36,10 @@ function getFormOutputsObject(formElem) {
 
 // Constant objects
 export const predefinedData_fMain = {
-  "proteinsMinAmount": "10.6",
-  "proteinsMaxAmount": "13.4",
-  "finalFlourWeight": "500",
-  "desiredProteinsAmount": "12.3"
+  "eggsWeightAvailable": "110",
+  "flourPercent": "100",
+  "milkPercent": "250",
+  "saltPercent": "1.7"
 };
 
 

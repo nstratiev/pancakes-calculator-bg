@@ -52,7 +52,7 @@ body {
 
 .--grid-2-cols {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
 }
 
 .--grid-3-cols {
