@@ -105,9 +105,28 @@ span.inform {
   color: purple;
   /* font-size: 90%; */
   border: 1px dashed purple;
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 6px;
   margin: 20px 0 40px 0;
+}
+
+div.info-entity {
+  display: inline-block;
+  cursor: pointer;
+}
+
+span.info-entity {
+  cursor: pointer;
+  border: 2px solid purple;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.2em;
+  height: 1.2em;
+  font-style: initial;
+  font-size: 140%;
+  font-weight: bold;
 }
 
 /* ##### Small Elements [End] ##### */
