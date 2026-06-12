@@ -48,11 +48,17 @@ button.top-nav:active {
   }
 }
 
-#link-legend:link,
-#link-legend:visited {
+.link-legend:link,
+.link-legend:visited {
   font-size: 1.4em;
   font-weight: bold;
   color: var(--orange-menu-color);
+}
+
+.link-notes:link,
+.link-notes:visited {
+  color: purple;
+  font-size: 1.2em;
 }
 
 

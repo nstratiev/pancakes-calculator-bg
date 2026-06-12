@@ -100,4 +100,14 @@ span.inform {
   font-size: 90%;
 }
 
+.batter-hydration.--container {
+  font-style: italic;
+  color: purple;
+  /* font-size: 90%; */
+  border: 1px dashed purple;
+  border-radius: 2px;
+  padding: 6px;
+  margin: 20px 0 40px 0;
+}
+
 /* ##### Small Elements [End] ##### */
