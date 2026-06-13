@@ -1,4 +1,4 @@
-export const appVersion = 'Версия: 1.0.3';
+export const appVersion = 'Версия: 1.0.4';
 const appEnvironmentType = '';
 
 export function printCurrentAppVersion(versionElem) {
