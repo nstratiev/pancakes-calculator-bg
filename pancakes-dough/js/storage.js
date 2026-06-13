@@ -15,14 +15,19 @@ export function setLocalStorage(dataObj, formName) {
 function getFormLocalStorage(formName) {
   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));
 
-  console.log("getFormLocalStorage() >>> ", calculatorData);
+  try {
+    const formData = calculatorData[calculatorName][formName];
+    return formData;
 
-  return calculatorData[calculatorName][formName];
+  } catch (error) {
+    return null;
+  }
 }
 
-export function clearLocalStorageGlobal() {
-  localStorage.removeItem(calculatorName);
-  // localStorage.clear();
+export function clearAllPageFormsLocalStorageData() {
+  const allCalculatorsData = JSON.parse(localStorage.getItem(calculatorsCategory));
+  delete allCalculatorsData[calculatorName];
+  localStorage.setItem(calculatorsCategory, JSON.stringify(allCalculatorsData));
 }
 
 export function populateLocaleStorageData(formsArr) {
