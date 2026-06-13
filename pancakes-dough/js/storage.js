@@ -2,6 +2,8 @@
 const calculatorName = 'calcPancakes';
 
 export function setLocalStorage(dataObj, formName) {
+  setInitialLocalStorage();
+
   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));
 
   calculatorData[calculatorName] = {
@@ -51,5 +53,5 @@ export function populateLocaleStorageData(formsArr) {
 }
 
 // IMPORTS
-import { calculatorsCategory } from '../../global/js/storage.js';
+import { calculatorsCategory, setInitialLocalStorage } from '../../global/js/storage.js';
 // ##### Storage [End] #####

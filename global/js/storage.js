@@ -4,7 +4,7 @@ export const calculatorsCategory = 'pancakesCalculators';
 setInitialLocalStorage();
 
 // Local Storage functions
-function setInitialLocalStorage() {
+export function setInitialLocalStorage() {
   const storageItem = localStorage.getItem(calculatorsCategory);
 
   if (storageItem === null) {
