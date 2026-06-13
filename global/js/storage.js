@@ -5,9 +5,11 @@ setInitialLocalStorage();
 
 // Local Storage functions
 function setInitialLocalStorage() {
-  const banicaStorage = localStorage.getItem(calculatorsCategory);
+  const storageItem = localStorage.getItem(calculatorsCategory);
+  console.log(storageItem);
 
-  if (banicaStorage === null) {
+
+  if (storageItem === null) {
     localStorage.setItem(calculatorsCategory, JSON.stringify({}));
   }
 

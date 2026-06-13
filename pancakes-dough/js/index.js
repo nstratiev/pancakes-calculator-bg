@@ -4,18 +4,11 @@
 document.addEventListener('DOMContentLoaded', (ev) => {
   printCurrentAppVersion(versionHeaderElem);
   printCurrentAppVersion(versionLegendElem);
-  console.log(versionLegendElem);
-
-  // populateLocaleStorageData([formMain]);
-  console.log([formMain]);
-
   populateLocaleStorageData([formMain]);
 
   console.log('HERE');
 
   onSubmit_initialLoad(ev);
-
-
 });
 
 // -- Button-to-top listeners

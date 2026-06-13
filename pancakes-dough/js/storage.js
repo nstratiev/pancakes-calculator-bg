@@ -15,12 +15,7 @@ export function setLocalStorage(dataObj, formName) {
 export function getLocalStorage(formName) {
   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));
 
-  console.log(calculatorsCategory);
-  console.log(calculatorName);
   console.log(calculatorData);
-
-  console.log(calculatorData[calculatorName]);
-
 
   return calculatorData[calculatorName][formName];
 }
