@@ -113,20 +113,21 @@ span.inform {
 div.info-entity {
   display: inline-block;
   cursor: pointer;
+
 }
 
 span.info-entity {
-  cursor: pointer;
-  border: 2px solid purple;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.2em;
-  height: 1.2em;
+  outline: 2px solid purple;
+  border-radius: 50%;
+  width: 1.4em;
+  height: 1.4em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: initial;
-  font-size: 140%;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* ##### Small Elements [End] ##### */
