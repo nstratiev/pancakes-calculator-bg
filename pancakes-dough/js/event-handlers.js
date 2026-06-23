@@ -1,6 +1,6 @@
 // ##### Event handlers [Start] #####
 export function onSubmit_initialLoad(ev) {
-  onSubmit(ev, formMain, { isFirstPageLoad: true }, printResult_formMain);
+  onSubmit(ev, formMain, { isFirstPageLoad: true }, printOutputResults_formMain);
 }
 
 // fMain
@@ -9,7 +9,7 @@ export function populatePredefinedValues_fMain() {
 }
 
 export function onSubmit_fMain(ev) {
-  onSubmit(ev, formMain, { isFirstPageLoad: false }, printResult_formMain, resetResults_fMain, '#results-fMain');
+  onSubmit(ev, formMain, { isFirstPageLoad: false }, printOutputResults_formMain, resetResults_fMain, '#results-fMain');
 }
 
 export function onSave_fMain(ev) {
@@ -35,23 +35,23 @@ function onSave(ev, formElem, hasCheckmark) {
   checkmarkAlertGreen(hasCheckmark);
 }
 
-function onSubmit(ev, formElem, loadingConfig, printFunc, resetFormResultsFunc, href) {
-  if (loadingConfig.isFirstPageLoad !== true) {
+function onSubmit(ev, formElem, padeLoadConfigObj, printFunc, resetFormResultsFunc, href) {
+  if (padeLoadConfigObj.isFirstPageLoad !== true) {
     ev.preventDefault();
   }
 
-  const data = getData(formElem, loadingConfig, resetFormResultsFunc);
+  const data = getData(formElem, padeLoadConfigObj, resetFormResultsFunc);
 
   if (data === false) {
     return;
   }
 
   setLocalStorage(data, formElem.name);
-  const resultsData = calculate_fMain(data);
-  printFunc(resultsData);
+  const outputData = calculate_fMain(data);
+  printFunc(outputData);
   resetFieldsOutline(formElem);
 
-  if (loadingConfig.isFirstPageLoad !== true) {
+  if (padeLoadConfigObj.isFirstPageLoad !== true) {
     checkmarkAlertGreen(true);
 
     if (href) {
@@ -79,7 +79,7 @@ function populatePredefinedValues(formElem, predefinedData, resetFormResultsFunc
 }
 
 
-import { printResult_formMain } from './print.js';
+import { printOutputResults_formMain } from './print.js';
 import { formMain, predefinedData_fMain } from './elements.js';
 import { getData, getFormDataToObject } from './generic.js';
 import { setLocalStorage } from './storage.js';
@@ -88,3 +88,4 @@ import { checkmarkAlertGreen } from './alerts.js';
 import { calculate_fMain } from './math.js';
 
 // ##### Event handlers [End] #####
+// ##### Event handlers [End] ##### >>> Revisited

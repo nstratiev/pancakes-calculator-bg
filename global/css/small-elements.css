@@ -111,6 +111,11 @@ span.inform {
   margin: 20px 0 40px 0;
 }
 
+.batter-hydration.--label {
+  text-align: left;
+  margin-bottom: 4px;
+}
+
 div.info-entity {
   display: inline-block;
   cursor: pointer;
@@ -132,3 +137,4 @@ span.info-entity {
 }
 
 /* ##### Small Elements [End] ##### */
+/* ##### Small Elements [End] ##### >>> Revisited */

@@ -127,7 +127,7 @@ details ul {
 }
 
 details ul ::marker {
-  color: green;
+  /* color: green; */
   display: block;
   margin-left: 2px;
 }
@@ -149,4 +149,4 @@ li .inform {
   font-style: italic;
 }
 
-/* ##### Details dropdown [End] ##### */
+/* ##### Details dropdown [End] ##### >>> Revisited */

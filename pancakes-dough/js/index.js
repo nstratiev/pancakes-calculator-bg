@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
   printCurrentAppVersion(versionLegendElem);
   populateLocaleStorageData([formMain]);
 
-  console.log('HERE');
-
   onSubmit_initialLoad(ev);
 });
 
@@ -36,7 +34,7 @@ document.addEventListener('click', (ev) => {
   const btnClassName = ev.target.className;
 
   if (btnsGroupClassName.includes('-main')) {
-    // console.log('MAIN');
+
     if (btnClassName === 'btn-submit') {
       onSubmit_fMain(ev);
 
@@ -46,6 +44,7 @@ document.addEventListener('click', (ev) => {
     } else if (btnClassName === 'btn-save') {
       onSave_fMain(ev);
     }
+
   }
 
 });
@@ -61,3 +60,4 @@ import { attachOnFocusoutDecimalPointValidation } from './validation.js';
 import { printCurrentAppVersion } from '../../global/js/version.js';
 
 // ##### Index [End] #####
+// ##### Index [End] ##### >>> Revisited

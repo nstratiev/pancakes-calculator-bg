@@ -6,8 +6,14 @@ export const versionLegendElem = document.querySelector('#version-legend');
 export const formMain = document.querySelector('#form-main');
 
 // -- Elements - fMain
-export const resultElementsArr_fMain = getFormOutputsArray(formMain);
-export const resultElementsObj_fMain = getFormOutputsObject(formMain);
+const inputs_fMain = getFormElementsByTag(formMain, 'INPUT');
+const outputs_fMain = getFormElementsByTag(formMain, 'OUTPUT');
+
+export const inputTagElementsArr_fMain = inputs_fMain.arr;
+export const inputTagElementsObj_fMain = inputs_fMain.obj;
+
+export const outputTagElementsArr_fMain = outputs_fMain.arr;
+export const outputTagElementsObj_fMain = outputs_fMain.obj;
 
 // Buttons
 export const btnPredefinedValues = document.querySelector('.btn-predefined-values');
@@ -20,21 +26,18 @@ export const btnGlobalReset = document.querySelector('#btn-reset-global ');
 export const btnGlobalSave = document.querySelector('#btn-save-global');
 
 // -- Functions
-function getFormOutputsArray(formElem) {
-  return Array.from(formElem.elements).filter(el => el.tagName === 'OUTPUT');
-}
-
-function getFormOutputsObject(formElem) {
+function getFormElementsByTag(formElem, targetTagString) {
+  const arr = Array.from(formElem.elements).filter(el => el.tagName === targetTagString.toUpperCase());
   const obj = {};
-  const arr = Array.from(formElem.elements).filter(el => el.tagName === 'OUTPUT');
-  const x = arr.forEach(el => {
+
+  arr.forEach(el => {
     obj[el.name] = el;
   });
 
-  return obj;
+  return { arr, obj };
 }
 
-// Constant objects
+// Static objects
 export const predefinedData_fMain = {
   "eggsWeightAvailable": "110",
   "flourPercent": "100",
@@ -44,3 +47,4 @@ export const predefinedData_fMain = {
 
 
 // ##### Elements [End] #####
+// ##### Elements [End] ##### >>> Revisited

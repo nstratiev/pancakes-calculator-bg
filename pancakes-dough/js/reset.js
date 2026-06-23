@@ -4,7 +4,7 @@ export function onReset_fMain(hasCheckmark) {
 }
 
 export function resetResults_fMain() {
-  resetResults(resultElementsArr_fMain);
+  resetResults(outputTagElementsArr_fMain);
 }
 
 // Basic
@@ -57,8 +57,9 @@ export function resetFieldsOutline(formElem) {
 
 
 import { clearAllPageFormsLocalStorageData } from './storage.js';
-import { resultElementsArr_fMain, formMain, } from './elements.js';
+import { outputTagElementsArr_fMain, formMain, } from './elements.js';
 import { checkmarkAlertGreen, globalResetConfirmDialog } from './alerts.js';
 import { inactivateAllFormsAndLinks } from './generic.js';
 
 // ##### Reset [End] #####
+// ##### Reset [End] ##### >>> Revisited
