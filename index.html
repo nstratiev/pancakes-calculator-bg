@@ -31,7 +31,7 @@
   </header>
 
   <article class="details">
-    <details class="details-top">
+    <details class="details-top" open>
       <summary>Пояснения: ...</summary>
       <div class="details-body -top">
         <p>
@@ -84,6 +84,7 @@
       title="Попълване на полетата за свободно въвеждане с примерни стойности">П</button>
 
     <a href="#notes" id="link-notes" class="top-nav link-legend link-notes" title="Бележки">Б</a>
+
     <a href="#legend" id="link-legend" class="top-nav link-legend" title="Легенда">?</a>
 
     <!-- <a href="./offline" id="link-offline" class="top-nav link-offline " title="Offline версия">Offline</a> -->
@@ -290,13 +291,13 @@
   </main>
 
   <article class="details">
-    <details class="details-bottom">
+    <details class="details-bottom" open>
       <summary id="notes">Бележки: ...</summary>
       <div class="details-body -bottom">
 
         <div class="basic-recipe-notes">
-          <h5 class="-legend">Базова формула на рецептата</h5>
-          <h6 class="-legend">(примерни стойности)</h6>
+          <h5 class="-legend">Базова (примерна) формула на&nbsp;рецептата</h5>
+          <!-- <h6 class="-legend">(примерни стойности)</h6> -->
 
           <ul>
             <li>Основна съставка >>> Яйца;</li>
@@ -331,7 +332,7 @@
   </article>
 
   <article class="details">
-    <details class="details-bottom">
+    <details class="details-bottom" open>
       <summary id="legend">Легенда: ...</summary>
       <div class="details-body -bottom">
 
@@ -429,6 +430,24 @@
             Попълване на полетата за свободно въвеждане с примерни стойности.
             <br>Стойностите са реалистични и практически
             изпитани, но те може да бъдат променяни според нуждите;
+          </p>
+
+          <!-- Row -->
+          <!-- Button sample >>> Notes (basic recipe) -->
+          <p class="-legend-grid-item -a">
+            <a href="#" id="sample-btn-notes" class="top-nav link-legend link-notes" title="Бележки">Б</a>
+          </p>
+          <p class="-legend-grid-item -b">
+            Пояснения за базовата (примерна) формула на рецептата и нейното приготвяне;
+          </p>
+
+          <!-- Row -->
+          <!-- Button sample >>> Legend -->
+          <p class="-legend-grid-item -a">
+            <a href="#" id="sample-btn-legend" class="top-nav link-legend" title="Легенда">?</a>
+          </p>
+          <p class="-legend-grid-item -b">
+            Легенда;
           </p>
 
           <!-- Row -->

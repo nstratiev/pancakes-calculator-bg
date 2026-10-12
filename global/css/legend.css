@@ -93,6 +93,12 @@ h6.-legend {
   height: 36px;
 }
 
+#sample-btn-legend,
+#sample-btn-notes {
+  pointer-events: none;
+  margin: 0 auto;
+}
+
 #btn-reset-sample,
 #btn-submit-sample,
 #btn-save-sample {
